@@ -2,18 +2,17 @@ from tensorflow.keras import models
 import numpy as np
 import datetime
 
-model = models.load_model('germany_prediction_04_april.h5')
+model = models.load_model('germany_prediction_05_april.h5')
 
 # germany's last 3 days case
-# 2nd april 84794
 # 3rd april 91159
 # 4th april 96092
+# 5th april 100123
 
 
-
-date = datetime.datetime(2020,4,5)
+date = datetime.datetime(2020,4,6)
 result = dict()
-x = np.array([84794, 91159, 96092])
+x = np.array([91159, 96092, 100123])
 for i in range(25):
     date += datetime.timedelta(days=1)
     x = x[-3:]
