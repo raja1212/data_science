@@ -10,6 +10,7 @@ model = models.load_model('germany_prediction_04_april.h5')
 # 4th april 96092
 
 
+
 date = datetime.datetime(2020,4,5)
 result = dict()
 x = np.array([84794, 91159, 96092])
