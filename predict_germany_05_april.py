@@ -12,7 +12,7 @@ model = models.load_model('model/germany_prediction_05_april.h5')
 
 date = datetime.datetime(2020,4,6)
 result = dict()
-x = np.array([91159, 96092, 100123])
+x = np.array([91159, 96092, 100123], dtype=np.float32)
 for i in range(25):
     date += datetime.timedelta(days=1)
     x = x[-3:]
