@@ -2,7 +2,7 @@ from tensorflow.keras import models
 import numpy as np
 import datetime
 
-model = models.load_model('germany_prediction_05_april.h5')
+model = models.load_model('model/germany_prediction_05_april.h5')
 
 # germany's last 3 days case
 # 3rd april 91159
