@@ -19,7 +19,7 @@ def create_sequence(input_data, steps):
 
 
 def read_input_data():
-    df = pd.read_csv('./data/germany.csv')
+    df = pd.read_csv('data/germany.csv')
     return df.to_numpy()
 
 

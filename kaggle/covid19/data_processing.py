@@ -4,7 +4,7 @@ import numpy as np
 
 
 def extract_n_save_germany_data():
-    df = pd.read_csv('./data/covid_19_data.csv')
+    df = pd.read_csv('data/covid_19_data.csv')
     filt_germany = (df['Country/Region'] == 'Germany') 
     df = df[filt_germany]
     df.drop_duplicates(inplace=True)
