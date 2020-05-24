@@ -1,0 +1,1 @@
+docker build -t pandas_tutorial . && docker run -p 8888:8888 pandas_tutorial 
